@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +12,6 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::post('blogs', [BlogController::class, 'store']);
 
 Route::get('/', function () {
     return view('welcome');
